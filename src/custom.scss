@@ -1,0 +1,69 @@
+@import "bootstrap/scss/bootstrap";
+
+/* Variables */
+$background-color: #EEE;
+$text-color: #444;
+$title-color: #1e1e1e;
+$link-color: #0d6efd;
+$strong-color: #000000;
+$font-body: 'Nunito Sans', sans-serif;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+
+/* Corps global */
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $font-body;
+  font-weight: $font-weight-normal;
+  color: #444; /* Couleur du texte */
+  background-color: #eee; /* Couleur de fond */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $title-color;
+  font-family: $font-body;
+  font-weight: $font-weight-bold;
+  color: #1e1e1e; /* Couleur des titres */
+}
+
+strong {
+  color: $strong-color;
+  font-weight: $font-weight-bold; /* Gras spécifique pour <strong> */
+  color: #000000; /* Couleur noire pour les balises <strong> */
+}
+
+a {
+  color: $link-color;
+  &:hover {
+    color: $text-color;
+  }
+}
+
+/* Boutons */
+.btn {
+  background-color: $link-color;
+  color: $background-color;
+  &:hover {
+    background-color: $text-color;
+    color: $background-color;
+  }
+}
+
+/* Navbar */
+.navbar {
+  background-color: $background-color;
+  color: $text-color;
+
+  a {
+    color: $text-color;
+    &:hover {
+      color: $link-color;
+    }
+  }
+}
+
+.text-white {
+    color: #ffffff !important; /* Blanc pur */
+  }
+  

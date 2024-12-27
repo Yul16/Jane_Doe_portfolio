@@ -1,0 +1,16 @@
+header {
+    margin-bottom: 50px;
+  }
+  
+  .navbar-nav a {
+    color: #fff;
+  }
+  
+  .img-circle {
+    border-radius: 50%;
+  }
+
+  body {
+    background-color: #EEE;
+    color: #444;
+  }
