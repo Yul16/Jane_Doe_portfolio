@@ -8,13 +8,13 @@ import "./theme.css";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop"; // Import du bouton
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Portfolio from "./pages/portfolio/Portfolio";
 import Blog from "./pages/blog/Blog";
-import Contact from "./pages/Contact";
+import Contact from "./pages/contact/Contact";
 import Legal from "./pages/legal/Legal";
 
 const App = () => {
