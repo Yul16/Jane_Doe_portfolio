@@ -1,12 +1,12 @@
 .footer {
-    background-color: #f9f9f9; // Gris clair pour les colonnes
+    background-color: #eaeaea; // Gris légèrement plus foncé pour les colonnes
     padding: 40px 0;
   
     .footer-columns {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      text-align: left;
+      text-align: left; // Aligner le texte à gauche
   
       .footer-column {
         flex: 1;
@@ -42,8 +42,25 @@
               }
   
               &:hover {
-                color: rgba(0, 0, 0, 0.8); // Texte noir avec transparence au survol
+                color: rgba(255, 255, 255, 0.8); // Texte blanc avec transparence au survol
+                transition: color 0.3s ease; // Transition fluide
               }
+            }
+          }
+        }
+  
+        .social-icons {
+          display: flex;
+          gap: 15px; // Espacement entre les icônes
+          margin-top: 15px;
+  
+          a {
+            color: #000000; // Icônes noires
+            font-size: 1.5rem; // Taille des icônes
+            transition: color 0.3s ease;
+  
+            &:hover {
+              color: #0d6efd; // Bleu au survol
             }
           }
         }

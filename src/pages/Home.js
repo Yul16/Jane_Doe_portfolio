@@ -37,7 +37,7 @@ const Home = () => {
         }}
       >
         <h1 style={{ fontSize: "3rem", fontWeight: "bold", color: "#fff" }}>
-          Bonjour, je suis John Doe
+          Bonjour, je suis Jane Doe
         </h1>
         <h2 style={{ fontSize: "1.8rem", marginTop: "10px", color: "#fff" }}>
           Développeur web full stack

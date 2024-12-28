@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-columns">
           {/* Colonne 1 */}
           <div className="footer-column">
-            <h5>John Doe</h5>
+            <h5>Jane Doe</h5>
             <p>
               40 Rue Laure Diebold
               <br />
@@ -125,7 +125,7 @@ const Footer = () => {
       {/* Section copyright */}
       <div className="footer-copyright">
         <p>
-          &copy; 2024 Designed by John Doe. <a href="#top">Haut de page</a>
+          &copy; 2024 Designed by Jane Doe. <a href="#top">Haut de page</a>
         </p>
       </div>
     </footer>
