@@ -15,7 +15,7 @@ import Services from "./pages/Services";
 import Portfolio from "./pages/portfolio/Portfolio";
 import Blog from "./pages/blog/Blog";
 import Contact from "./pages/Contact";
-import Legal from "./pages/Legal";
+import Legal from "./pages/legal/Legal";
 
 const App = () => {
   return (
