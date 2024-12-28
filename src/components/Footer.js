@@ -1,28 +1,26 @@
 import React from "react";
+import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light py-4">
+    <footer className="footer">
       <div className="container">
-        <div className="row">
-          {/* Colonne gauche : Carte Google Maps et icônes */}
-          <div className="col-md-3">
-            <h5>Localisation</h5>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.377021074329!2d2.376539651050847!3d48.85102060907822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67208b0c38367%3A0x4411521d2a51c06a!2s8%20Rue%20Trousseau%2C%2075011%20Paris%2C%20France!5e0!3m2!1sfr!2sbe!4v1661093683217!5m2!1sfr!2sbe"
-              width="100%"
-              height="150"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              title="Google Map"
-            ></iframe>
-            <div className="mt-3">
+        <div className="footer-columns">
+          {/* Colonne 1 */}
+          <div className="footer-column">
+            <h5>John Doe</h5>
+            <p>
+              40 Rue Laure Diebold
+              <br />
+              69009 Lyon, France
+              <br />
+              Téléphone : 06 20 30 40 50
+            </p>
+            <div className="social-icons">
               <a
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-light me-2"
               >
                 <i className="fab fa-github"></i>
               </a>
@@ -30,7 +28,6 @@ const Footer = () => {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-light me-2"
               >
                 <i className="fab fa-twitter"></i>
               </a>
@@ -38,90 +35,98 @@ const Footer = () => {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-light"
               >
                 <i className="fab fa-linkedin"></i>
               </a>
             </div>
           </div>
 
-          {/* Autres colonnes */}
-          <div className="col-md-3">
-            <h5>Navigation</h5>
-            <ul className="list-unstyled">
+          {/* Colonne 2 */}
+          <div className="footer-column">
+            <h5>Liens utiles</h5>
+            <ul>
               <li>
-                <a href="/" className="text-light">
-                  Accueil
+                <a href="/">
+                  <i className="fas fa-arrow-right"></i> Accueil
                 </a>
               </li>
               <li>
-                <a href="/about" className="text-light">
-                  À propos
+                <a href="/about">
+                  <i className="fas fa-arrow-right"></i> À propos
                 </a>
               </li>
               <li>
-                <a href="/services" className="text-light">
-                  Services
+                <a href="/services">
+                  <i className="fas fa-arrow-right"></i> Services
                 </a>
               </li>
               <li>
-                <a href="/legal" className="text-light">
-                  Mentions légales
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-md-3">
-            <h5>Réalisations</h5>
-            <ul className="list-unstyled">
-              <li>
-                <a href="/portfolio#project1" className="text-light">
-                  Projet 1
+                <a href="/contact">
+                  <i className="fas fa-arrow-right"></i> Me contacter
                 </a>
               </li>
               <li>
-                <a href="/portfolio#project2" className="text-light">
-                  Projet 2
-                </a>
-              </li>
-              <li>
-                <a href="/portfolio#project3" className="text-light">
-                  Projet 3
+                <a href="/legal">
+                  <i className="fas fa-arrow-right"></i> Mentions légales
                 </a>
               </li>
             </ul>
           </div>
-          <div className="col-md-3">
-            <h5>Blog</h5>
-            <ul className="list-unstyled">
-              <li>
-                <a href="/blog#article1" className="text-light">
-                  Article 1
-                </a>
-              </li>
-              <li>
-                <a href="/blog#article2" className="text-light">
-                  Article 2
-                </a>
-              </li>
-              <li>
-                <a href="/blog#article3" className="text-light">
-                  Article 3
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
 
-        {/* Copyright */}
-        <div className="text-center mt-3">
-          <p>
-            &copy; John Doe. Tous droits réservés.{" "}
-            <a href="#top" className="text-light">
-              Haut de page
-            </a>
-          </p>
+          {/* Colonne 3 */}
+          <div className="footer-column">
+            <h5>Mes dernières réalisations</h5>
+            <ul>
+              <li>
+                <a href="/portfolio#project1">
+                  <i className="fas fa-arrow-right"></i> Fresh food
+                </a>
+              </li>
+              <li>
+                <a href="/portfolio#project2">
+                  <i className="fas fa-arrow-right"></i> Restaurant Akira
+                </a>
+              </li>
+              <li>
+                <a href="/portfolio#project3">
+                  <i className="fas fa-arrow-right"></i> Espace bien-être
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Colonne 4 */}
+          <div className="footer-column">
+            <h5>Mes derniers articles</h5>
+            <ul>
+              <li>
+                <a href="/blog#article1">
+                  <i className="fas fa-arrow-right"></i> Coder son site en
+                  HTML/CSS
+                </a>
+              </li>
+              <li>
+                <a href="/blog#article2">
+                  <i className="fas fa-arrow-right"></i> Vendre ses produits sur
+                  le web
+                </a>
+              </li>
+              <li>
+                <a href="/blog#article3">
+                  <i className="fas fa-arrow-right"></i> Se positionner sur
+                  Google
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+
+      {/* Section copyright */}
+      <div className="footer-copyright">
+        <p>
+          &copy; 2024 Designed by John Doe. <a href="#top">Haut de page</a>
+        </p>
       </div>
     </footer>
   );

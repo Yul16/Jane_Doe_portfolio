@@ -1,0 +1,71 @@
+.footer {
+    background-color: #f9f9f9; // Gris clair pour les colonnes
+    padding: 40px 0;
+  
+    .footer-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: left;
+  
+      .footer-column {
+        flex: 1;
+        margin: 10px;
+        min-width: 200px;
+  
+        h5 {
+          color: #1e1e1e; // Couleur des titres
+          font-weight: 600;
+          margin-bottom: 15px;
+        }
+  
+        ul {
+          list-style: none;
+          padding: 0;
+  
+          li {
+            margin-bottom: 10px;
+  
+            a {
+              position: relative;
+              padding-left: 25px; // Espace pour la flèche
+              text-decoration: none;
+              color: #444; // Texte gris foncé
+              font-size: 0.95rem;
+  
+              i {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #0d6efd; // Flèche bleue
+              }
+  
+              &:hover {
+                color: rgba(0, 0, 0, 0.8); // Texte noir avec transparence au survol
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .footer-copyright {
+      background-color: #2a2a2a; // Gris foncé pour la section copyright
+      color: #e6e6e6; // Texte clair
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.85rem;
+  
+      a {
+        color: #0d6efd; // Couleur des liens
+        text-decoration: none;
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: #ffffff; // Blanc au survol
+        }
+      }
+    }
+  }
+  
