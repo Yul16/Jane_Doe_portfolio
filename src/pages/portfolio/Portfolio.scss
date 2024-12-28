@@ -1,0 +1,38 @@
+#portfolio {
+    .portfolio-banner {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    .container {
+      padding-top: 30px;
+    }
+  
+    h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      color: #444;
+      margin-bottom: 10px;
+    }
+  
+    .blue-line {
+      width: 250px; /* Longueur de la ligne */
+      height: 3px; /* Hauteur de la ligne */
+      background-color: #0d6efd; /* Couleur bleue */
+      margin: 0 auto 20px; /* Centrage avec un espace en dessous */
+    }
+  }
+  

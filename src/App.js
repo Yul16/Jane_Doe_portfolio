@@ -12,7 +12,7 @@ import ScrollToTop from "./components/ScrollToTop"; // Import du bouton
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
-import Portfolio from "./pages/Portfolio";
+import Portfolio from "./pages/portfolio/Portfolio";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Legal from "./pages/Legal";
