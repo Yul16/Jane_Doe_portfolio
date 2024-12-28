@@ -78,6 +78,10 @@ const Home = () => {
             alignItems: "flex-start",
             maxWidth: "1200px",
             width: "100%",
+            backgroundColor: "#fff", // Cadre blanc
+            boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)", // Ombre douce
+            borderRadius: "10px",
+            padding: "20px", // Espacement interne
           }}
         >
           {/* À propos */}

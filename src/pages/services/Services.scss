@@ -1,0 +1,52 @@
+.services-section {
+  .services-banner {
+    width: 100%;
+  }
+
+  .services-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000; // Titre en noir
+    text-transform: uppercase;
+  }
+
+  .services-subtitle {
+    font-size: 1.2rem;
+    color: #444;
+    margin-top: 10px;
+  }
+
+  .services-underline {
+    width: 250px;
+    height: 4px;
+    background-color: #0d6efd;
+    margin: 15px auto 30px;
+  }
+
+  .service-card {
+    border-radius: 10px;
+    padding: 20px;
+
+    &:hover {
+      transform: translateY(-5px);
+      transition: transform 0.3s ease;
+    }
+
+    .service-icon {
+      font-size: 2.5rem;
+      color: #0d6efd;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #1e1e1e;
+    }
+
+    .card-text {
+      color: #444;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+  }
+}
