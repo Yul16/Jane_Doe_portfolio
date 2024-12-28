@@ -48,7 +48,11 @@ const ProjectCard = ({ project }) => {
           style={{
             backgroundColor: "#f1f1f1",
             padding: "10px",
-            borderRadius: "10px",
+            textAlign: "center",
+            fontSize: "0.9rem",
+            fontWeight: "bold",
+            color: "#444",
+            borderTop: "1px solid #ddd",
           }}
         >
           {project.tech}

@@ -15,19 +15,33 @@ const BlogArticle = ({ article }) => {
       <div className="card-body">
         <h5 className="card-title">{article.title}</h5>
         <p className="card-text">{article.description}</p>
-        <a
-          href={`/blog/${article.id}`} // Remplacez `article.id` par un identifiant unique
-          className="btn btn-outline-primary"
-          style={{
-            borderRadius: "10px",
-            textTransform: "uppercase",
-            fontWeight: "bold",
-          }}
-        >
-          Lire la suite
-        </a>
-
-        <p className="text-muted mt-3">Publié le {article.date}</p>
+        <div style={{ display: "flex", justifyContent: "flex-start" }}>
+          <a
+            href={`/blog/${article.id}`} // Remplacez `article.id` par un identifiant unique
+            className="btn btn-outline-primary"
+            style={{
+              borderRadius: "10px",
+              fontWeight: "bold",
+              padding: "5px 15px",
+              textTransform: "uppercase",
+            }}
+          >
+            Lire la suite
+          </a>
+        </div>
+      </div>
+      <div
+        style={{
+          backgroundColor: "#f1f1f1",
+          padding: "10px",
+          textAlign: "center",
+          fontSize: "0.9rem",
+          fontWeight: "bold",
+          color: "#444",
+          borderTop: "1px solid #ddd",
+        }}
+      >
+        Publié le {article.date}
       </div>
     </div>
   );

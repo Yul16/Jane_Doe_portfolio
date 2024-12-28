@@ -49,19 +49,34 @@ const Blog = () => {
   ]);
 
   return (
-    <section id="blog" className="p-4 bg-light text-center">
-      <div className="container">
-        <h2 className="text-uppercase mb-4">Blog</h2>
-        <p className="mb-4">
-          Retrouvez ici quelques articles sur le développement web.
-        </p>
-        <div className="underline"></div>
-        <div className="row mt-5">
-          {articles.map((article) => (
-            <div key={article.id} className="col-md-4 col-sm-6 mb-4">
-              <BlogArticle article={article} />
-            </div>
-          ))}
+    <section id="blog">
+      {/* Bannière */}
+      <div
+        className="banner"
+        style={{
+          backgroundImage: "url('/img/banniere.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "300px",
+          width: "100%",
+        }}
+      ></div>
+
+      {/* Blog Section */}
+      <div className="p-4 bg-light text-center">
+        <div className="container">
+          <h2 className="text-uppercase mb-4">Blog</h2>
+          <p className="mb-4">
+            Retrouvez ici quelques articles sur le développement web.
+          </p>
+          <div className="underline"></div>
+          <div className="row mt-5">
+            {articles.map((article) => (
+              <div key={article.id} className="col-md-4 col-sm-6 mb-4">
+                <BlogArticle article={article} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
